@@ -1,3 +1,6 @@
+/* base css format */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -6,6 +9,7 @@
   padding: 0;
 }
 
+/* Some element and class styles */
 h1 {
   font-size: 48px;
   font-weight: 900;
@@ -16,73 +20,124 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-family: Arial, sans-serif;
+.nav-bar a,
+.left-side p {
   font-size: 18px;
+  color: #e5e7eb;
 }
-
-.header {
-  padding: 15px 150px;
-  background-color: #1f2937;
-}
-
-.logo {
+.nav-bar .logo {
   font-size: 24px;
   color: #f9faf8;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 90px;
-}
-
-.nav-links ul {
- display: flex;
-  gap: 20px;
+.nav-bar ul {
   list-style-type: none;
 }
 
-.header-content {
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
-  margin-bottom: 90px;
-  
+.nav-bar a {
+  text-decoration: none;
 }
-.left-content {
+
+/* Website Layout */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+/* Header Section */
+
+.header {
+  background-color: #1f2937;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-right: auto;
+  align-items: center;
+}
+.header-content {
+  margin: 20px 50px;
   
 }
-.right-content {
-  width: 500px;
-  height: 200px;
- 
- 
+
+.nav-bar {
+  display: flex;
+  margin-bottom: 120px;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 5px;
+.nav-links ul {
+  display: flex;
+  gap: 20px;
 }
 
-.left-content p,
-.nav-links a,
-.button {
-  font-size: 18px;
+.logo {
+  margin-right: auto;
+  font-weight: 900;
+}
+
+.header-posts {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 120px;
+}
+
+.left-side {
+  flex: 1;
+  max-width: 450px;  
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.placeholder {
+  padding: 110px 130px;
+  background-color: grey;
   color: #e5e7eb;
+  font-size: 18px;
 }
 
-.button {
-  background-color: #3882f6;
+.left-side .button {
   border: none;
+  padding: 9px 32px;
+  margin-top: 10px;
   border-radius: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
-  align-self: flex-start;
+  font-weight: 700;
+  background-color: #3882f6;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+/* Information Section */
+
+.information {
+  text-align: center;
+}
+
+.information .title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.information .card-content {
+  max-width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.information .card-image {
+  border: 4px solid  #3882f6;
+  border-radius: 20px;
+  padding: 80px;
+}
+
+.information .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
 }
