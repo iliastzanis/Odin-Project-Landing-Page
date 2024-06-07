@@ -193,7 +193,6 @@ body {
 }
 
 .call-to-items {
-
   display: flex;
   flex-direction: column;
 }
@@ -204,7 +203,7 @@ body {
   margin-top: 10px;
   border-radius: 10px;
   font-weight: 700;
-  background-color:  #3882f6;
+  background-color: #3882f6;
   color: #f9faf8;
   font-size: 18px;
   cursor: pointer;
@@ -220,7 +219,7 @@ body {
 }
 
 .footer .footer-text {
-  padding-top: 35px ;
+  padding-top: 35px;
   padding-bottom: 35px;
   font-size: 18px;
   color: #e5e7eb;
