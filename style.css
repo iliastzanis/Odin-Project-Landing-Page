@@ -20,8 +20,7 @@ a {
 }
 
 .nav-bar a,
-.left-side p,
-.call-to-items .call-to-p {
+.left-side p {
   font-size: 18px;
   color: #e5e7eb;
 }
@@ -38,11 +37,7 @@ a {
   text-decoration: none;
 }
 
-.call-to-items .call-to-header {
-  color: #f9faf8;
-  font-weight: 700;
-  font-size: 25px;
-}
+
 
 /* Website Layout */
 body {
@@ -195,6 +190,17 @@ body {
 .call-to-items {
   display: flex;
   flex-direction: column;
+}
+
+.call-to-items .call-to-p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.call-to-items .call-to-header {
+  color: #f9faf8;
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .call-to-container button {
